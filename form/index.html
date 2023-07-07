@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <h2>Транспортные средства и водители</h1>
+
+            <label for="gosnomer">Гос-номер:</label>
+            <input type="text" id="gosnomer" name="gosnomer" placeholder="Укажите гос-номер" required>
+
+            <label for="vehicle">Транспортное средство</label>
+            <input type="text" id="vehicle" placeholder="Транспортное средство" required>
+
+            <label for="arrivalDate">Ориентировочная дата прибытия к покупателю</label>
+            <input type="date" id="arrivalDate" value="Дата*" required>
+
+            <h2>Данные о водителе</h2>
+
+            <label for="fullName">ФИО</label>
+            <input type="text" id="fullName" placeholder="Укажите ФИО водителя" required>
+
+            <label for="passportSeries">Паспортные данные</label>
+            <div class="passport-inputs">
+                <input type="text" id="passportSeries" placeholder="Серия" required>
+                <input type="text" id="passportNumber" placeholder="Номер" required>
+            </div>
+
+            <label for="issuedBy">Кем выдан</label>
+            <input type="text" id="issuedBy" placeholder="Кем выдан" required>
+
+            <label for="issuedDate">Когда выдан</label>
+            <input type="text" id="issuedDate" placeholder="Когда выдан" required>
+            <div class="btn-inputs">
+                <input type="submit" value="Отправить">
+                <input type="button" value="Отменить" onclick="resetForm()">
+            </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

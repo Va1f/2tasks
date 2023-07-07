@@ -1,0 +1,54 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.passport-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.passport-inputs input {
+    flex: 1;
+}
+
+label span {
+    flex: 1;
+}
+
+.btn-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-inputs input {
+    flex: 1;
+}
+
+input[type="submit"],
+input[type="button"] {
+    margin-top: 10px;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.979);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    color: white;
+    background-color: black;
+    transition: 0.9s;
+}
